@@ -1,0 +1,25 @@
+body {
+  background-color: ivory;
+}
+header {
+  width: 400px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h1 {
+  color: brown;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid black;
+  padding: 15px;
+}
+
+#number-btn {
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  height: 35px;
+}
