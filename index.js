@@ -1,14 +1,19 @@
-const createTombola = () => {
-  const bingo = document.getElementById("bingo");
-  for (i = 0; i < 76; i++) {
+const createTombola = function () {
+  const tabellone = document.getElementById("bingo");
+  for (let i = 1; i <= 76; i++) {
     const cellDiv = document.createElement("div");
-    cellDiv.className = "cellDiv";
+    cellDiv.innerText = i;
+    cellDiv.classList.add("cells");
 
-    const cellNum = document.createElement("h4");
-    cellNum.className = "cellNum";
-    cellNum.innerText = i + 1;
-
-    bingo.appendChild(cellDiv);
-    cellDiv.appendChild(cellNum);
+    tabellone.appendChild(cellDiv);
+  }
+};
+createTombola();
+button.onclick = function () {
+  const randomNumber = Math.ceil(Math.random() * 76);
+  for (let i = 0; i < 77; i++) {
+    if (cellDiv[i].innerText === randomNumber) {
+      cellDiv[i].className = "orangeCell";
+    }
   }
 };
